@@ -1,0 +1,5 @@
+# logger #
+logging:
+  level:
+    org:
+      bitcoin: DEBUG
