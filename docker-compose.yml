@@ -1,0 +1,15 @@
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: landind-zone
+    ports:
+      - 80:80
+  bitcoin-timechain-calendar:
+    build:
+      context: .
+      dockerfile: Dockerfile_api
+    container_name: landind-zone
+    ports:
+      - 8080:8080
