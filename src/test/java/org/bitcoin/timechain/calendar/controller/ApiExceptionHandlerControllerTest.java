@@ -39,7 +39,7 @@ class ApiExceptionHandlerControllerTest {
     @Test
     void testDocumentNotFoundException() {
         DocumentNotFoundException exception = assertThrows(DocumentNotFoundException.class, () -> {
-            throw new DocumentNotFoundException("not found");
+            throw new DocumentNotFoundException("not found", null);
         });
         assertThat(exception.getMessage(), is("not found"));
     }
@@ -47,7 +47,7 @@ class ApiExceptionHandlerControllerTest {
     @Test
     void testHandleError() {
         final ResponseEntity<String> result = apiExceptionHandlerController.handleError(HttpStatus.NOT_FOUND,
-                new DocumentNotFoundException("This is just a 404 Test"));
+                new DocumentNotFoundException("This is just a 404 Test", null));
         assertThat(result.getBody(), is("This is just a 404 Test"));
         assertThat(result.getStatusCode(), is(HttpStatus.NOT_FOUND));
     }

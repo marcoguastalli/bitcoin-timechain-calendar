@@ -2,6 +2,7 @@
 # ApplicationYmlConfig #
 web:
   version: "v1"
+  urlToCall: "https://blockchain.info/blocks/1700660891152?format=json"
 
 # server #
 server:
