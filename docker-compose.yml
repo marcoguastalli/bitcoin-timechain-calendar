@@ -3,13 +3,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: landind-zone
+    container_name: nginx
     ports:
       - 80:80
   bitcoin-timechain-calendar:
     build:
       context: .
       dockerfile: Dockerfile_api
-    container_name: landind-zone
+    container_name: springboot
     ports:
       - 8080:8080

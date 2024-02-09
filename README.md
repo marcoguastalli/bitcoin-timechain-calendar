@@ -12,27 +12,27 @@ the Bitcoin blockchain information from https://blockchain.info/blocks/170066089
 - Maven v3.8.4
 
 ### Build
-setjdk17
-./mvnw clean package
-./mvnw clean test
+`setjdk17`
+`./mvnw clean package`
+`./mvnw clean test`
 
 ### Run
-./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
-./mvnw spring-boot:run -Dspring-boot.run.profiles=docker
+`./mvnw spring-boot:run -Dspring-boot.run.profiles=dev`
+`./mvnw spring-boot:run -Dspring-boot.run.profiles=docker`
 
 ### Api documentation
-http://localhost:8080/bitcoin-timechain-calendar/swagger-ui/index.html
+- http://localhost:8080/bitcoin-timechain-calendar/swagger-ui/index.html
 
 ### Actuator
-http://localhost:8080/bitcoin-timechain-calendar/actuator
-http://localhost:8080/bitcoin-timechain-calendar/actuator/health
-http://localhost:8080/bitcoin-timechain-calendar/actuator/beans
-http://localhost:8080/bitcoin-timechain-calendar/actuator/env
-http://localhost:8080/bitcoin-timechain-calendar/actuator/logfile
-http://localhost:8080/bitcoin-timechain-calendar/actuator/loggers
-http://localhost:8080/bitcoin-timechain-calendar/actuator/metrics
-http://localhost:8080/bitcoin-timechain-calendar/actuator/threaddump
+- http://localhost:8080/bitcoin-timechain-calendar/actuator
+- http://localhost:8080/bitcoin-timechain-calendar/actuator/health
+- http://localhost:8080/bitcoin-timechain-calendar/actuator/beans
+- http://localhost:8080/bitcoin-timechain-calendar/actuator/env
+- http://localhost:8080/bitcoin-timechain-calendar/actuator/logfile
+- http://localhost:8080/bitcoin-timechain-calendar/actuator/loggers
+- http://localhost:8080/bitcoin-timechain-calendar/actuator/metrics
+- http://localhost:8080/bitcoin-timechain-calendar/actuator/threaddump
 
 ### Play
-curl -I http://localhost:8080/bitcoin-timechain-calendar/v1/version
-curl -I http://localhost:8080/bitcoin-timechain-calendar/v1/blocks
+`curl -I http://localhost:8080/bitcoin-timechain-calendar/v1/version`
+`curl -I http://localhost:8080/bitcoin-timechain-calendar/v1/blocks`
