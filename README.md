@@ -8,17 +8,16 @@ the Bitcoin blockchain information from https://blockchain.info/blocks/170066089
 - %3D =
 
 ### Prerequisites
-- JDK v17.0.4
-- Maven v3.8.4
+- JDK v21
+- Maven v3.9.6
 
 ### Build
-`setjdk17`
-`./mvnw clean package`
-`./mvnw clean test`
+- `./mvnw clean package`
+- `./mvnw clean test`
 
 ### Run
-`./mvnw spring-boot:run -Dspring-boot.run.profiles=dev`
-`./mvnw spring-boot:run -Dspring-boot.run.profiles=docker`
+- `./mvnw spring-boot:run -Dspring-boot.run.profiles=dev`
+- `./mvnw spring-boot:run -Dspring-boot.run.profiles=docker`
 
 ### Api documentation
 - http://localhost:8080/bitcoin-timechain-calendar/swagger-ui/index.html
@@ -34,5 +33,5 @@ the Bitcoin blockchain information from https://blockchain.info/blocks/170066089
 - http://localhost:8080/bitcoin-timechain-calendar/actuator/threaddump
 
 ### Play
-`curl -I http://localhost:8080/bitcoin-timechain-calendar/v1/version`
-`curl -I http://localhost:8080/bitcoin-timechain-calendar/v1/blocks`
+- `curl -I http://localhost:8080/bitcoin-timechain-calendar/v1/version`
+- `curl -I http://localhost:8080/bitcoin-timechain-calendar/v1/blocks`
